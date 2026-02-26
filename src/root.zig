@@ -534,7 +534,7 @@ pub const ChildAlignment = extern struct {
 
     /// Centers children on both axes
     pub const center = ChildAlignment{ .x = .center, .y = .center };
-};
+};  
 
 pub const LayoutConfig = extern struct {
     /// Controls sizing of this element inside its parent container
@@ -543,10 +543,13 @@ pub const LayoutConfig = extern struct {
     padding: Padding = .{},
     /// Controls gap between child elements along layout axis
     child_gap: u16 = 0,
+    wrapChildGap: u16 = 0,
     /// Controls how child elements are aligned on each axis
     child_alignment: ChildAlignment = .{},
     /// Controls the direction of children's layout
     direction: LayoutDirection = .left_to_right,
+
+    wrapChildren : bool = false,
 };
 
 pub fn ClayArray(comptime T: type) type {
