@@ -1,31 +1,11 @@
-// .{
-//     .name = .zclay,
-//     .version = "0.2.2",
-//     .dependencies = .{
-//         .clay = .{
-//             // .url = "git+https://github.com/RobinB333/clay?ref=main#76ec3632d80c145158136fd44db501448e7b17c4",
-//             // .hash = "N-V-__8AAMgPcwDno4v8eK99GevmM7BXvf-ESYT_fuxcRtQX",
-//             .path = "./clay",
-//         },
-//     },
-//     .paths = .{
-//         "build.zig",
-//         "build.zig.zon",
-//         "src",
-//         "vendor",
-//         "LICENSE",
-//         "README.md",
-//     },
-//     .fingerprint = 0x4821f6a4906b3d12,
-// }
-
 .{
     .name = .zclay,
     .version = "0.2.2",
     .dependencies = .{
         .clay = .{
-            .url = "git+https://github.com/RobinB333/clay.git#<commit>",
-            .hash = "<hash>",
+            // .url = "git+https://github.com/RobinB333/clay?ref=main#76ec3632d80c145158136fd44db501448e7b17c4",
+            // .hash = "N-V-__8AAMgPcwDno4v8eK99GevmM7BXvf-ESYT_fuxcRtQX",
+            .path = "./clay",
         },
     },
     .paths = .{
@@ -38,3 +18,23 @@
     },
     .fingerprint = 0x4821f6a4906b3d12,
 }
+
+// .{
+//     .name = .zclay,
+//     .version = "0.2.2",
+//     .dependencies = .{
+//         .clay = .{
+//             .url = "git+https://github.com/RobinB333/clay.git#<commit>",
+//             .hash = "<hash>",
+//         },
+//     },
+//     .paths = .{
+//         "build.zig",
+//         "build.zig.zon",
+//         "src",
+//         "vendor",
+//         "LICENSE",
+//         "README.md",
+//     },
+//     .fingerprint = 0x4821f6a4906b3d12,
+// }
